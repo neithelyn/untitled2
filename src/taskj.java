@@ -8,10 +8,15 @@ public class taskj {
         int c = sc.nextInt();
         int d = sc.nextInt();
 
-        int s = (c-a);
-        int r = (d-b);
+        int s = (a*100+b);
+        int r = (c*100+d);
 
-        System.out.println(s+" "+ r);
+        int cop = (r-s);
+
+        int s1 = cop/100;
+        int r1 = cop%100;
+
+        System.out.println(s1+" "+ r1);
 
 
 

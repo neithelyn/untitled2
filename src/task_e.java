@@ -9,11 +9,15 @@ public class task_e {
         int a1 = in.nextInt();
         int b1 = in.nextInt();
 
+        int da = Math.abs(a - a1);
+        int db = Math.abs(b - b1);
 
-        if ((a1-a == 2 && b1-b == 1) ||(a1-a == 1 || b1-b == 2)){
+
+        if ((da == 1 && db == 2) || (da == 2 && db == 1)){
             System.out.println("YES");
-        }  else
+        } else{
             System.out.println("NO");
         }
     }
+}
 

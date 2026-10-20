@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class task_d {
@@ -9,8 +10,12 @@ public class task_d {
         int a1 = in.nextInt();
         int b1 = in.nextInt();
 
+        boolean d = Math.abs(a-a1) == Math.abs(b-b1);
+        boolean h = (a==a1)|| (b == b1);
+        boolean ise = (a != a1) || (b != b1);
 
-        if (a ==a1 || b == b1 ||(a -b == 0 && a1-b1 == 0)){
+
+        if ((d || h) && ise){
             System.out.println("YES");
         }  else {
             System.out.println("NO");

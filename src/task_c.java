@@ -11,7 +11,7 @@ public class task_c {
         int b1 = in.nextInt();
 
 
-        if (a -b == 0 && a1-b1 == 0){
+        if (Math.abs(a - a1) == Math.abs(b-b1) && (a !=a1 &&b !=b1)){
             System.out.println("YES");
         }  else {
             System.out.println("NO");

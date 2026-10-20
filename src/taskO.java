@@ -10,9 +10,9 @@ public class taskO{
         if (a == b){
             System.out.println(0);
         }else if(a>b){
-            System.out.println(a);
+            System.out.println(1);
         }else{
-            System.out.println(b);
+            System.out.println(2);
         }
 
     }

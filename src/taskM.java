@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 public class taskM {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int a1 = in.nextInt();
-        int b1 = in.nextInt();
-        int a2 = in.nextInt();
-        int b2 = in.nextInt();
+        int x1 = scanner.nextInt();
+        int y1 = scanner.nextInt();
+        int x2 = scanner.nextInt();
+        int y2 = scanner.nextInt();
 
-        if ((a1 > 0)== (a2 > 0) &&(b1 >0) == (b2 > 0)){
-            System.out.println("Yes");
-        }else{
-            System.out.println("No");
+        // Точки в одной четверти, если x1 и x2 одного знака И y1 и y2 одного знака
+        if ((x1 * x2 > 0) && (y1 * y2 > 0)) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
         }
     }
 }

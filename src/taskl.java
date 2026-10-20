@@ -2,18 +2,25 @@ import java.util.Scanner;
 
 public class taskl {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        long k = sc.nextLong();
-        long m = sc.nextLong();
-        long n = sc.nextLong();
+        Scanner in = new Scanner(System.in);
 
-        if (n == 0) {
-            System.out.println(0);
-        } else if (n <= k) {
-            System.out.println(2 * m);
-        } else {
-            long rounds = (2 * n + k - 1) / k;
-            System.out.println(rounds * m);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int t = 0;
+
+        if(c <= a){
+            t = 2*b;
+        }else{
+            int ts = c*2;
+            int but  =(ts- a-1)/a;
+            t = but *b;
         }
+        System.out.println(t);
+
+
+
+
+
     }
 }
